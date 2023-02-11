@@ -1,10 +1,13 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Home from "./components/Home";
+import Login from "./components/Login";
 
 function App() {
   return (
     <div className="App">
-      TASK MANAGEMENT APP
+      <Login />
+      {/* <Home/> */}
     </div>
   );
 }
