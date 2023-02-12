@@ -10,6 +10,7 @@ const Login = () => {
         width: "428px",
         height: "926px",
         background: "#FFFFFF",
+        justifyContent: "center",
       }}
     >
       <SwipeableTextMobileStepper />

@@ -1,7 +1,8 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
-import Avatar from "@mui/material/Avatar";
+import { Avatar, Box, Typography } from "@mui/material";
 import Logo from "./vinodjatav.jpg";
+import { Search, SearchAppBar, SearchIconWrapper, StyledInputBase } from "./SearchItems";
+import SearchIcon from '@mui/icons-material/Search';
 
 const Home = () => {
   return (
@@ -13,12 +14,13 @@ const Home = () => {
         background: "#FFFFFF",
       }}
     >
-      <Stack
+      <Box
         sx={{
           position: "absolute",
           width: "378px",
           height: "40px",
-          justifyContent: "space-between",
+          marginLeft: "25px",
+          marginTop: "-40px",
         }}
       >
         <Box
@@ -67,7 +69,7 @@ const Home = () => {
             position: "absolute",
             width: "40px",
             height: "40px",
-            left: "363px",
+            left: "338px",
             top: "76px",
             backgroundColor: "#D9D9D9",
             borderRadius: "8px",
@@ -75,14 +77,14 @@ const Home = () => {
           alt="Vinod Jatav"
           src={Logo}
         />
-      </Stack>
+      </Box>
       <Box
         sx={{
           position: "absolute",
           width: "128px",
           height: "40px",
-          left: "25px",
-          top: "148px",
+          left: "50px",
+          top: "70px",
         }}
       >
         <Typography
@@ -120,9 +122,11 @@ const Home = () => {
             opacity: "0.6",
           }}
         >
-          Feb 11, 2023
+          Feb 12, 2023
         </Typography>
       </Box>
+      <SearchAppBar listItems={[]}/>
+      
     </Box>
   );
 };
