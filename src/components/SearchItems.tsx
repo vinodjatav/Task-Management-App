@@ -17,7 +17,7 @@ export const Search = styled('div')(({ theme }) => ({
   width: '350px',
   height: '50px',
   [theme.breakpoints.up('sm')]: {
-    marginLeft: theme.spacing(1),
+    marginLeft: theme.spacing(4),
     width: 'auto',
   },
 }));
@@ -44,10 +44,10 @@ export const StyledInputBase = styled(InputBase)(({ theme }) => ({
     marginLeft: '-150px',
     [theme.breakpoints.up('sm')]: {
       width: '38ch',
-      marginLeft: '10px',
+      marginLeft: '30px',
       '&:focus': {
         width: '38ch',
-        marginLeft: '10px',
+        marginLeft: '30px',
       },
     },
     height: "16px"
