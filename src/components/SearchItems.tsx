@@ -3,7 +3,6 @@ import { styled } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import Stack from '@mui/material/Stack';
 import { Box, InputBase } from '@mui/material';
-import { Items } from './Items';
 
 export const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -93,7 +92,7 @@ export const SearchAppBar = (props: propTypes) => {
         </Search>
       </Box>
     </Stack>
-    <Items listItems={filteredRows}/>
+    {/* <Items listItems={filteredRows}/> */}
     </>
   );
 }
